@@ -1,0 +1,145 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.formats__btn {
+		width: 424px;
+		height: 99px;
+		padding: 17px;
+		line-height: 29px;
+		font-size: 24px;
+	}
+	.formats__btn.pt {
+		padding-top: 29px;
+	}
+	.feedback_btn-turn {
+		padding: 25px 88px;
+		line-height: 29px;
+		font-size: 24px;
+	}
+	footer .copyright {
+		float: left;
+		text-align: left;
+	}
+	footer .phone {
+		float: right;
+		text-align: right;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	header .text {
+		line-height: 34px;
+		font-size: 28px;
+	}
+	.text1_title {
+		line-height: 34px;
+		font-size: 28px;
+	}
+	.text2_title {
+		line-height: 34px;
+		font-size: 28px;
+	}
+	.feedback_title {
+		line-height: 34px;
+		font-size: 28px;
+	}
+	.partners > div > a {
+		display: inline-block;
+		margin-left: 22px;
+		margin-right: 22px;
+	}
+	.partners > div > a:first-child {
+		margin-left: 0;
+	}
+	.partners > div > a:last-child {
+		margin-right: 0;
+	}
+	.partners__mipt {
+		margin-bottom: 17px;
+	}
+	.partners__skoltech {
+		margin-bottom: 17px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	header {
+		background-position: 0 0;
+	}
+	.better_item_container {
+		min-height: 270px;
+		padding: 0 50px 20px 50px;
+		margin-bottom: 0;
+	}
+	.better_item_container:first-child {
+		padding-left: 15px;
+	}
+	.better_item_container:last-child {
+		padding-right: 15px;
+	}
+	.better_item_container.middle {
+		border-right: 1px solid #2053B8;
+		border-left: 1px solid #2053B8;
+	}
+	.bullets__item {
+		width: 33.333333%;
+	}
+	.formats__brand {
+		float: left;
+		width: 50%;
+	}
+	.formats__opensourse {
+		float: right;
+		width: 50%;
+	}
+	.partners > div > a {
+		margin-left: 44px;
+		margin-right: 44px;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.container {
+		width: 1000px;
+	}
+	.better_item_container {
+		min-height: 232px;
+	}
+}

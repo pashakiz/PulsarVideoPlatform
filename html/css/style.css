@@ -134,6 +134,9 @@ header .text {
 	font-weight: 500;
 	padding: 80px 15px;
 }
+.bullets__item__overlay__title_paddingtop {
+	padding-top: 94px;
+}
 .bullets__item__overlay__text {
 	display: none;
 	color: #fff;
@@ -141,7 +144,7 @@ header .text {
 	font-size: 18px;
 	text-align: center;
 	font-weight: 400;
-	padding: 60px 30px;
+	padding: 45px 30px;
 }
 .text2 {
 	background-color: #2a009e;
@@ -236,7 +239,39 @@ header .text {
 }
 #feedback input, #feedback textarea, #feedback button {
 	display: block;
-	margin: 10px auto 0;
+	margin: 20px auto 0;
+}
+#feedback input, #feedback textarea {
+	width: 316px;
+	padding: 15px;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+}
+#feedback button.feedback_btn-send {
+	width: 316px;
+	padding: 25px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	line-height: 24px;
+	font-size: 20px;
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+	outline: none;
+}
+#feedback button.feedback_btn-send:hover {
+	border-color: transparent;
+	background-color: #2A009E;
+}
+#feedback button.feedback_btn-send:active {
+	border: 1px solid #2A009E;
+	background-color: transparent;
 }
 .partners {
 	text-align: center;

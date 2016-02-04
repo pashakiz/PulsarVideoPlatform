@@ -78,6 +78,14 @@
 		line-height: 34px;
 		font-size: 28px;
 	}
+	.feedback_mailto {
+		display: inline-block;
+		margin-right: 150px;
+		margin-bottom: 0;
+	}
+	.feedback_phone {
+		display: inline-block;
+	}
 	.partners > div > a {
 		display: inline-block;
 		margin-left: 22px;

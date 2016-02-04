@@ -106,8 +106,8 @@ $(document).ready(function() {
 	});
 
 	//show
-	// $(".feedback_btn-turn").on("click", function() {
-	// 	$("#feedback").show();
-	// });
+	$(".feedback_btn-turn").on("click", function() {
+		$("#feedback").show();
+	});
 
 });

@@ -29,7 +29,8 @@ body {
 	font-weight: 300;
 }
 header {
-	height: 522px;
+	height: 263px;
+	padding: 54px 0;
 	background-image: url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -40,15 +41,6 @@ header .logo {
 	height: 155px;
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
-	margin: 54px 0 150px 0;
-}
-header .text {
-	color: #fff;
-	line-height: 24px;
-	font-size: 20px;
-	text-align: center;
-	font-family: "Geometria5";
-	font-weight: 300;
 }
 .better {
 	background-color: #eee;
@@ -217,6 +209,14 @@ header .text {
 	font-weight: 400;
 	margin-bottom: 45px;
 }
+.feedback_title2 {
+	color: #fff;
+	line-height: 20px;
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .feedback_btn-turn {
 	padding: 15px 60px;
 	background-color: transparent;
@@ -228,6 +228,7 @@ header .text {
 	font-weight: 400;
 	text-transform: uppercase;
 	outline: none;
+	margin-top: 45px;
 }
 .feedback_btn-turn:hover {
 	border-color: transparent;
@@ -237,12 +238,32 @@ header .text {
 	border: 1px solid #2A009E;
 	background-color: transparent;
 }
+.feedback_mailto {
+	display: block;
+	color: #eee;
+	text-decoration: underline;
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.feedback_mailto:hover {
+	text-decoration: none;
+	color: #f00;
+}
+.feedback_phone {
+	display: block;
+	color: #eee;
+	line-height: 24px;
+	font-size: 24px;
+	font-weight: 400;
+}
 #feedback input, #feedback textarea, #feedback button {
 	display: block;
 	margin: 20px auto 0;
 }
 #feedback input, #feedback textarea {
-	width: 316px;
+	width: 280px;
 	padding: 15px;
 	border: none;
 	outline: none;
@@ -253,8 +274,8 @@ header .text {
 	color: #000;
 }
 #feedback button.feedback_btn-send {
-	width: 316px;
-	padding: 25px;
+	width: 280px;
+	padding: 15px;
 	background-color: transparent;
 	border: 1px solid #fff;
 	color: #fff;

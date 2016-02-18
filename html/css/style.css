@@ -1,18 +1,26 @@
 *::-webkit-input-placeholder {
-	color: #666;
+	color: #fff;
 	opacity: 1;
+	font-size: 18px;
+	font-weight: 300;
 }
 *:-moz-placeholder {
-	color: #666;
+	color: #fff;
 	opacity: 1;
+	font-size: 18px;
+	font-weight: 300;
 }
 *::-moz-placeholder {
-	color: #666;
+	color: #fff;
 	opacity: 1;
+	font-size: 18px;
+	font-weight: 300;
 }
 *:-ms-input-placeholder {
-	color: #666;
+	color: #fff;
 	opacity: 1;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 body input:focus:required:invalid,
@@ -22,10 +30,6 @@ body textarea:focus:required:invalid {
 body input:required:valid,
 body textarea:required:valid {
 	
-}
-.container {
-	width: 1000px;
-	padding: 0;
 }
 body {
 	font-family: "Geometria5", sans-serif;
@@ -48,15 +52,17 @@ header .overlay {
 	height: 100%;
 }
 header .logo {
-	width: 235px;
-	height: 155px;
+	width: 115px;
+	height: 76px;
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
 }
 header .text {
 	color: #fff;
-	line-height: 34px;
-	font-size: 28px;
+	line-height: 24px;
+	font-size: 20px;
 	text-align: center;
 	font-family: "Geometria5";
 	font-weight: 300;
@@ -67,10 +73,10 @@ header .text {
 	display: inline-block;
 	background-color: transparent;
 	border: 1px solid #fff;
-	padding: 25px 35px 30px;
+	padding: 15px;
 	color: #fff;
 	line-height: 1;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 400;
 	text-align: center;
 }
@@ -80,38 +86,30 @@ header .text {
 }
 .better {
 	background-color: #eee;
-	padding: 44px 0 20px 0;
+	padding: 44px 0 40px 0;
 }
 .better_title {
 	text-align: center;
 	color: #2053B8;
-	line-height: 34px;
-	font-size: 28px;
+	line-height: 28px;
+	font-size: 24px;
 	text-align: center;
 	font-weight: 500;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 .better_item_container {
-	min-height: 186px;
-	padding: 0 35px 50px;
-}
-.better_item_container:first-child {
-	padding-left: 15px;
+	margin-bottom: 15px;
 }
 .better_item_container:last-child {
-	padding-right: 15px;
-}
-.better_item_container.middle {
-	border-right: 1px solid #2053B8;
-	border-left: 1px solid #2053B8;
+	margin-bottom: 0;
 }
 .better_item {
 	text-align: center;
 }
 .better_item_title {
 	color: #2053B8;
-	line-height: 26px;
-	font-size: 22px;
+	line-height: 25px;
+	font-size: 20px;
 	font-weight: 500;
 	margin-bottom: 8px;
 }
@@ -128,14 +126,13 @@ header .text {
 }
 .text1_title {
 	color: #fff;
-	line-height: 34px;
-	font-size: 28px;
+	line-height: 28px;
+	font-size: 20px;
 	font-weight: 500;
 }
 .bullets {}
 .bullets__item {
-	float: left;
-	width: 33.333333%;
+	width: 100%;
 	height: 260px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -164,17 +161,20 @@ header .text {
 .bullets__item__overlay__title {
 	display: block;
 	color: #fff;
-	line-height: 26px;
-	font-size: 22px;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-weight: 500;
-	padding: 55px 15px 10px;
+	padding: 35px 15px 10px;
+}
+.bullets__item__overlay__title > br {
+	display: none;
 }
 .bullets__item__overlay__text {
 	display: block;
 	color: #fff;
 	line-height: 24px;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 	font-weight: 300;
 	padding: 0 30px;
@@ -186,25 +186,25 @@ header .text {
 }
 .text2_title {
 	color: #fff;
-	line-height: 34px;
-	font-size: 28px;
+	line-height: 28px;
+	font-size: 20px;
 	font-weight: 500;
 }
 .formats {
 	background-color: #eee;
 	padding: 52px 0 30px;
 	color: #2A009E;
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 16px;
+	line-height: 20px;
 	font-weight: 300;
 }
 .formats__block {
-	float: left;
-	width: 50%;
+	width: 100%;
+	margin-bottom: 20px;
 }
 .formats__block__title {
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 22px;
+	line-height: 26px;
 	font-weight: 500;
 	margin-bottom: 20px;
 }
@@ -220,6 +220,9 @@ header .text {
 	content: "–";
 	margin-right: 5px;
 }
+.formats__separator {
+	display: none;
+}
 .formats__more {
 	width: 100%;
 	text-align: center;
@@ -227,92 +230,113 @@ header .text {
 }
 .feedback {
 	background-color: #2053b8;
-	text-align: center;
-	padding: 50px 0 40px 0;
+	padding: 30px 0 40px 0;
 }
 .feedback_title {
 	color: #fff;
-	line-height: 34px;
-	font-size: 28px;
+	line-height: 30px;
+	font-size: 22px;
 	font-weight: 400;
-	margin-bottom: 45px;
+	margin-bottom: 50px;
+	text-align: center;
 }
-.feedback_title2 {
+.feedback_title > br {
+	display: none;
+}
+.feedback__blocks {
 	color: #fff;
-	line-height: 20px;
+	font-weight: 400;
+}
+.feedback__block {
+	width: 100%;
+}
+.feedback__separator {
+	display: none;
+}
+.feedback__block__title {
+	line-height: 22px;
 	font-size: 18px;
 	font-weight: 400;
-	margin-top: 20px;
+	margin-top: 5px;
 	margin-bottom: 20px;
-}
-.feedback_btn-turn {
-	padding: 15px 60px;
-	background-color: transparent;
-	border: 1px solid #fff;
-	color: #fff;
-	line-height: 24px;
-	font-size: 20px;
 	text-align: center;
-	font-weight: 400;
-	text-transform: uppercase;
-	outline: none;
-	margin-top: 45px;
-}
-.feedback_btn-turn:hover {
-	border-color: transparent;
-	background-color: #2A009E;
-}
-.feedback_btn-turn:active {
-	border: 1px solid #2A009E;
-	background-color: transparent;
-}
-.feedback_mailto {
-	display: inline-block;
-	color: #eee;
-	text-decoration: underline;
-	line-height: 24px;
-	font-size: 24px;
-	font-weight: 400;
-	margin-right: 150px;
-}
-.feedback_mailto:hover {
-	text-decoration: none;
-	color: #f00;
 }
 .feedback_phone {
-	display: inline-block;
-	color: #eee;
-	line-height: 24px;
-	font-size: 24px;
-	font-weight: 400;
-}
-#feedback input, #feedback textarea, #feedback button {
 	display: block;
-	margin: 20px auto 0;
+	line-height: 1;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	text-align: center;
 }
-#feedback input, #feedback textarea {
-	width: 280px;
-	padding: 15px;
-	border: none;
+.feedback_phone__icon {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background-image: url(../img/icon-phone.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+.feedback_phone__value {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+.feedback_mailto {
+	display: block;
+	line-height: 1;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: center;
+}
+.feedback_mailto__icon {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	background-image: url(../img/icon-mail.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+.feedback_mailto__value {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+#feedback {
+	text-align: center;
+	margin-top: 50px;
+}
+#feedback input {
+	display: block;
+	margin: 0 auto 22px;
+	width: 200px;
+	padding: 6px 19px 7px;
+	border: 1px solid #fff;
 	outline: none;
-	background-color: #fff;
-	line-height: 20px;
-	font-size: 16px;
-	font-weight: 400;
-	color: #000;
+	background-color: #2A009E;
+	line-height: 22px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
 }
+
 #feedback button.feedback_btn-send {
-	width: 280px;
-	padding: 15px;
+	display: inline-block;
+	margin-top: 7px;
+	width: 169px;
+	padding: 6px 19px 7px;
 	background-color: transparent;
 	border: 1px solid #fff;
 	color: #fff;
-	line-height: 24px;
-	font-size: 20px;
+	line-height: 22px;
+	font-size: 18px;
 	text-align: center;
 	font-weight: 400;
-	text-transform: uppercase;
 	outline: none;
+	float: none;
+	clear: both;
 }
 #feedback button.feedback_btn-send:hover {
 	border-color: transparent;
@@ -327,21 +351,16 @@ header .text {
 	padding: 38px 0;
 }
 .partners > div > a {
-	display: inline-block;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	background-repeat: no-repeat;
-	margin: 0 44px 30px;
-}
-.partners > div > a:first-child {
-	margin-left: 0;
-}
-.partners > div > a:last-child {
-	margin-right: 0;
+	margin-bottom: 30px;
 }
 .partners__mipt {
 	width: 235px;
 	height: 71px;
 	background-image: url(../img/mipt.png);
-	margin-bottom: 17px;
 }
 .partners__rosnano {
 	width: 147px;
@@ -352,7 +371,6 @@ header .text {
 	width: 235px;
 	height: 73px;
 	background-image: url(../img/skoltech.jpg);
-	margin-bottom: 17px;
 }
 footer {
 	background-color: #eee;
@@ -361,12 +379,4 @@ footer {
 	font-weight: 400;
 	padding: 30px 0;
 	text-align: center;
-}
-footer .copyright {
-	float: left;
-	text-align: left;
-}
-footer .phone {
-	float: right;
-	text-align: right;
 }

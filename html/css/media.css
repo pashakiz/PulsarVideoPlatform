@@ -40,11 +40,33 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+	.partners > div > a {
+		display: inline-block;
+		background-repeat: no-repeat;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.partners > div > a:first-child {
+		margin-left: 0;
+	}
+	.partners > div > a:last-child {
+		margin-right: 0;
+	}
+	.partners > div > a.partners__mipt {
+		margin-bottom: 47px;
+	}
+	.partners > div > a.partners__skoltech {
+		margin-bottom: 47px;
+	}
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+	.partners > div > a {
+		margin-left: 44px;
+		margin-right: 44px;
+	}
 
 }
 
@@ -52,5 +74,220 @@
 @media only screen and (min-width : 1200px) {
 	.container {
 		width: 1000px;
+	}
+	header .logo {
+		width: 235px;
+		height: 155px;
+		background-image: url(../img/logo.png);
+		background-repeat: no-repeat;
+		margin: 0;
+	}
+	header .text {
+		line-height: 34px;
+		font-size: 28px;
+	}
+	.btn-scroll {
+		padding: 25px 35px 30px;
+		line-height: 1;
+		font-size: 24px;
+	}
+	.better {
+		padding: 44px 0 20px 0;
+	}
+	.better_title {
+		line-height: 34px;
+		font-size: 28px;
+		margin-bottom: 60px;
+	}
+	.better_item_container {
+		min-height: 186px;
+		padding: 0 35px 50px;
+		margin-bottom: 0;
+	}
+	.better_item_container:first-child {
+		padding-left: 15px;
+	}
+	.better_item_container:last-child {
+		padding-right: 15px;
+	}
+	.better_item_container.middle {
+		border-right: 1px solid #2053B8;
+		border-left: 1px solid #2053B8;
+	}
+	.better_item_title {
+		line-height: 26px;
+		font-size: 22px;
+	}
+	.text1_title {
+		line-height: 34px;
+		font-size: 28px;
+	}
+	.bullets__item {
+		float: left;
+		width: 33.333333%;
+		height: 260px;
+	}
+	.bullets__item__overlay__title {
+		line-height: 26px;
+		font-size: 22px;
+		padding: 55px 15px 10px;
+	}
+	.bullets__item__overlay__title > br {
+		display: inline;
+	}
+	.bullets__item__overlay__text {
+		line-height: 24px;
+		font-size: 20px;
+		padding: 0 30px;
+	}
+	.text2_title {
+		line-height: 34px;
+		font-size: 28px;
+	}
+	.formats {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.formats__block {
+		float: left;
+		width: 43%;
+		margin-bottom: 0;
+	}
+	.formats__separator {
+		display: block;
+		float: left;
+		width: 14%;
+		height: 358px;
+		position: relative;
+	}
+	.formats__separator:before {
+		content: "";
+		display: block;
+		width: 1px;
+		background-color: #2A009E;
+		height: 110px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+	}
+	.formats__separator:after {
+		content: "";
+		display: block;
+		width: 1px;
+		background-color: #2A009E;
+		height: 110px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+	}
+	.formats__separator__icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -32px 0 0 -32px;
+		width: 64px;
+		height: 64px;
+		background-image: url(../img/icon-options.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.feedback_title {
+		line-height: 34px;
+		font-size: 28px;
+		margin-bottom: 25px;
+	}
+	.feedback_title > br {
+		display: inline;
+	}
+	.feedback__block {
+		float: left;
+		width: 44%;
+	}
+	.feedback__separator {
+		display: block;
+		float: left;
+		width: 12%;
+		height: 227px;
+		position: relative;
+	}
+	.feedback__separator:before {
+		content: "";
+		display: block;
+		width: 1px;
+		background-color: #fff;
+		height: 90px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+	}
+	.feedback__separator:after {
+		content: "";
+		display: block;
+		width: 1px;
+		background-color: #fff;
+		height: 90px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+	}
+	.feedback__separator__inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -20px 0 0 -20px;
+		text-align: center;
+		font-size: 20px;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+	}
+	.feedback__block__title {
+		line-height: 24px;
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+	.feedback_phone {
+		font-size: 20px;
+		margin-left: 50px;
+		text-align: left;
+		margin-bottom: 38px;
+	}
+	.feedback_phone__icon {
+		width: 68px;
+		height: 68px;
+	}
+	.feedback_phone__value {
+		margin-left: 41px;
+	}
+	.feedback_mailto {
+		font-size: 20px;
+		margin-left: 50px;
+		text-align: left;
+	}
+	.feedback_mailto__icon {
+		width: 68px;
+		height: 68px;
+	}
+	.feedback_mailto__value {
+		margin-left: 31px;
+	}
+	#feedback {
+		margin-top: 0;
+		width: 422px; /*fix for text view*/
+	}
+	#feedback input {
+		float: left;
+		margin: 0 0 22px;
+	}
+	#feedback input:nth-child(2n) {
+		margin-right: 22px;
+	}
+	footer .copyright {
+		float: left;
+		text-align: left;
+	}
+	footer .phone {
+		float: right;
+		text-align: right;
 	}
 }

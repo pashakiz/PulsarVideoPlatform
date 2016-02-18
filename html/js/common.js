@@ -1,42 +1,8 @@
 $(document).ready(function() {
 
-	/* Placeholder
-		Пример вызова:
-		placeholder(".feedback__name");
-		placeholder(".feedback__email");
-		в html необходимо указать атрибут value
-		<input class="feedback__name" type="text" name="name" value="Имя Фамилия">
-		<input class="feedback__email" type="text" name="email" value="E-mail">
-	*/
-	function placeholder(selector) {
-		var title = "";
-		title = $(selector).val();
-		if (title == "") {
-			return false;
-		}
-		$(selector).on("focus", function() {
-			if( $(this).val() == title || $(this).val() == "" ) {
-				$(this).val("");
-			}
-		});
-		$(selector).on("blur", function() {
-			if( $(this).val() == "" ) {
-				$(this).val(title);
-			}
-		});
-	}
-
-	placeholder(".feedback_name");
-	placeholder(".feedback_org");
-	placeholder(".feedback_email");
-
-	//Parallax (Stellar)
-	//Документация: http://markdalgleish.com/projects/stellar.js/docs/
-	//<div class="image" data-stellar-background-ratio="0">...</div>
-	// $.stellar({
-	// 	horizontalScrolling: false,
-	// 	verticalOffset: 0
-	// });
+	//Placeholder
+	//Doc: https://github.com/NV/placeholder.js/
+	$("[placeholder]").textPlaceholder();
 	
 	//Попап менеджер FancyBox
 	//Документация: http://fancyapps.com/fancybox/
@@ -48,16 +14,6 @@ $(document).ready(function() {
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
 	// $(".top_mnu").navigation();
-
-	//Добавляет классы дочерним блокам .block для анимации
-	//Документация: http://imakewebthings.com/jquery-waypoints/
-	// $(".block").waypoint(function(direction) {
-	// 	if (direction === "down") {
-	// 		$(".class").addClass("active");
-	// 	} else if (direction === "up") {
-	// 		$(".class").removeClass("deactive");
-	// 	};
-	// }, {offset: 100});
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
@@ -103,11 +59,6 @@ $(document).ready(function() {
 			}, 1000);
 		});
 		return false;
-	});
-
-	//show
-	$(".feedback_btn-turn").on("click", function() {
-		$("#feedback").show();
 	});
 
 });

@@ -4,6 +4,10 @@
 Готовая верстка.
 
 ##/joomla_root/
+Аккаунт к джумле:<br>
+`editor`<br>
+`RqS;Ik&vCiopwH}N\Z57`<br>
+
 Папка с темой, натянутой на Joomla и БД.<br>
 Путь к папке с темой: `/templates/jblank/`<br>
 

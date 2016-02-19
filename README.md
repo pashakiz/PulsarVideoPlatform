@@ -9,12 +9,12 @@
 
 В файле configuration.php нужно изменить некторые строки.<br>
 Доступ в БД:<br>
-`public $user = 'DATABASE_USERNAME';<br>
-public $password = 'DATABASE_PASSWORD';<br>
-public $db = 'DATABASE_NAME';`<br>
+`public $user = 'DATABASE_USERNAME';`<br>
+`public $password = 'DATABASE_PASSWORD';`<br>
+`public $db = 'DATABASE_NAME';`<br>
 Пути к логам и временной дирректории:<br>
-`public $log_path = '/var/www/.../logs';<br>
-public $tmp_path = '/var/www/.../tmp';`<br>
+`public $log_path = '/var/www/.../logs';`<br>
+`public $tmp_path = '/var/www/.../tmp';`<br>
 
 Версия:<br>
 `Joomla! Version: Joomla! 3.4.8 Stable [ Ember ] 24-December-2015 19:30 GMT`

@@ -17,7 +17,7 @@
 `public $tmp_path = '/var/www/.../tmp';`<br>
 
 Версия:<br>
-`Joomla! Version: Joomla! 3.4.8 Stable [ Ember ] 24-December-2015 19:30 GMT`
-`Joomla! Platform Version: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT`
+`Joomla! Version: Joomla! 3.4.8 Stable [ Ember ] 24-December-2015 19:30 GMT`<br>
+`Joomla! Platform Version: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT`<br>
 
 Используемая тема: http://jblank.pro/

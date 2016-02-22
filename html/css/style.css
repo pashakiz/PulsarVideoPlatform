@@ -37,19 +37,15 @@ body {
 	font-weight: 300;
 }
 header {
-	width: 100%;
-	height: 530px;
-	background-image: url(../img/header-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background-color: #e2e1dc;
+	background: -moz-linear-gradient(top, #f2f2f2 0%, #e2e1dc 100%);
+	background: -webkit-linear-gradient(top, #f2f2f2 0%, #e2e1dc 100%);
+	background: -o-linear-gradient(top, #f2f2f2 0%, #e2e1dc 100%);
+	background: -ms-linear-gradient(top, #f2f2f2 0%, #e2e1dc 100%);
+	background: linear-gradient(to bottom, #f2f2f2 0%, #e2e1dc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e2e1dc',GradientType=0 );
 	text-align: center;
-}
-header .overlay {
-	padding: 54px 0;
-	background-color: rgba(0,0,0,0.4);
-	width: 100%;
-	height: 100%;
+	padding: 54px 0 41px;
 }
 header .logo {
 	width: 115px;
@@ -57,22 +53,29 @@ header .logo {
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	margin: 0 auto;
+	margin: 0 auto 30px;
+}
+header .devices-img {
+	width: 100%;
+}
+header .devices-img img {
+	width: 100%;
+	height: auto;
 }
 header .text {
-	color: #fff;
+	color: #343434;
 	line-height: 24px;
 	font-size: 20px;
 	text-align: center;
 	font-family: "Geometria5";
 	font-weight: 300;
-	margin: 62px 0 55px;
+	margin: 30px 0 40px;
 }
 .btn-scroll {
 	outline: none;
 	display: inline-block;
-	background-color: transparent;
-	border: 1px solid #fff;
+	background-color: #2053B8;
+	border: 1px solid #2053B8;
 	padding: 15px;
 	color: #fff;
 	line-height: 1;
@@ -82,6 +85,10 @@ header .text {
 }
 .btn-scroll:hover {
 	background-color: #2A009E;
+	border-color: #2A009E;
+}
+.btn-scroll:active {
+	background-color: transparent;
 	border-color: #2A009E;
 }
 .better {
@@ -137,15 +144,16 @@ header .text {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-position: 0 0;
 }
 .bullets__item.b1 {
-	background-image: url(../img/bg-servers.jpg);
+	background-image: url(../img/scr1.jpg);
 }
 .bullets__item.b2 {
-	background-image: url(../img/bg-lectory.jpg);
+	background-image: url(../img/scr2.jpg);
 }
 .bullets__item.b3 {
-	background-image: url(../img/bg-phone.jpg);
+	background-image: url(../img/scr3.jpg);
 }
 .bullets__item:hover .bullets__item__overlay {
 	background-color: rgba(0,0,0,0.7);
@@ -154,10 +162,7 @@ header .text {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.6);
-}
-.bullets__item .lnk {
-	display: block;
-	height: 100%;
+	padding-top: 35px;
 }
 .bullets__item__overlay__title {
 	display: block;
@@ -166,7 +171,22 @@ header .text {
 	font-size: 18px;
 	text-align: center;
 	font-weight: 500;
-	padding: 35px 15px 10px;
+	padding: 0 15px 10px;
+}
+.bullets__item__overlay__title.lnk {
+	width: 255px;
+	border: 1px solid #fff;
+	padding: 12px;
+	margin: 0 auto 25px;
+	background-color: transparent;
+}
+.bullets__item__overlay__title.lnk:hover {
+	background-color: #2A009E;
+	border-color: #2A009E;
+}
+.bullets__item__overlay__title.lnk:active {
+	background-color: transparent;
+	border-color: #2A009E;
 }
 .bullets__item__overlay__title > br {
 	display: none;
@@ -358,6 +378,9 @@ header .text {
 	background-repeat: no-repeat;
 	margin-bottom: 30px;
 }
+.partners > div > a:last-child {
+	margin-bottom: 0;
+}
 .partners__mipt {
 	width: 235px;
 	height: 71px;
@@ -369,9 +392,9 @@ header .text {
 	background-image: url(../img/rosnano.png);
 }
 .partners__skoltech {
-	width: 235px;
-	height: 73px;
-	background-image: url(../img/skoltech.jpg);
+	width: 219px;
+	height: 104px;
+	background-image: url(../img/skolkovo.jpg);
 }
 footer {
 	background-color: #eee;

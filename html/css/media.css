@@ -40,11 +40,15 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+	.bullets__item__overlay {
+		padding-top: 55px;
+	}
 	.partners > div > a {
 		display: inline-block;
 		background-repeat: no-repeat;
 		margin-left: 20px;
 		margin-right: 20px;
+		margin-bottom: 0;
 	}
 	.partners > div > a:first-child {
 		margin-left: 0;
@@ -53,10 +57,10 @@
 		margin-right: 0;
 	}
 	.partners > div > a.partners__mipt {
-		margin-bottom: 47px;
+		margin-bottom: 17px;
 	}
 	.partners > div > a.partners__skoltech {
-		margin-bottom: 47px;
+		margin-bottom: 2px;
 	}
 
 }
@@ -73,7 +77,7 @@
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	.container {
-		width: 1000px;
+		width: 1030px;
 	}
 	header .logo {
 		width: 235px;
@@ -82,9 +86,18 @@
 		background-repeat: no-repeat;
 		margin: 0;
 	}
+	header .devices-img {
+		width: 1134px;
+		height: 538px;
+		position: relative;
+		left: -67px;
+		top: -166px;
+		margin-bottom: -166px;
+	}
 	header .text {
-		line-height: 34px;
-		font-size: 28px;
+		line-height: 31px;
+		font-size: 26px;
+		margin: 62px 0 55px;
 	}
 	.btn-scroll {
 		padding: 25px 35px 30px;
@@ -130,7 +143,11 @@
 	.bullets__item__overlay__title {
 		line-height: 26px;
 		font-size: 22px;
-		padding: 55px 15px 10px;
+	}
+	.bullets__item__overlay__title.lnk {
+		width: 255px;
+		line-height: 22px;
+		margin-top: -10px;
 	}
 	.bullets__item__overlay__title > br {
 		display: inline;

@@ -133,11 +133,11 @@
 					<div class="feedback__separator__inner">или</div>
 				</div>
 				<div class="feedback__block">
-					<form id="feedback" class="clearfix" action="">
+					<form id="feedback" class="clearfix" method="post" action="">
 						<div class="feedback__block__title">Оставьте свои контактные данные, и мы обязательно свяжемся с вами в ближйшее время</div>
 						<input name="name" type="text" placeholder="Ф.И.О." required>
-						<input name="org" type="text" placeholder="Организация">
-						<input name="position" type="text" placeholder="Должность">
+						<input name="org" type="text" placeholder="Организация" required>
+						<input name="position" type="text" placeholder="Должность" required>
 						<input name="email" type="text" placeholder="Эл. почта" required>
 						<button class="feedback_btn-send" type="submit">Отправить</button>
 					</form>

@@ -14,23 +14,37 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
+	$("form#feedback").submit(function() {
+
+		var name = $(this).find("input[name='name']").val(),
+			org = $(this).find("input[name='org']").val(),
+			position = $(this).find("input[name='position']").val(),
+			email = $(this).find("input[name='email']").val();
+
+		if (!name || !org || !email || !position) {
+			alert("Заполните поля формы.");
+			return false;
+		}
+
+		var email_regexp = /.+@.+\..+/i;
+		var email_test = email_regexp.test(email);
+		if (!email_test) {
+			alert("Введен некоректный Email-адрес.");
+			return false;
+		}
+
 		$.ajax({
 			type: "POST",
-			url: "mail.php",
-			data: $("form").serialize(),
+			url: "mail.php", // /templates/jblank/php/mail.php
+			data: $("form#feedback").serialize(),
 			success: function(data) {
-				// $('#order_status').html(data);
-				$('#order_status').html('Спасибо, Ваша заявка отправлена!');
+				console.log("jquery-ajax-mail-success");
 			},
 			error:  function(xhr, str){
 				alert('Возникла ошибка: ' + xhr.responseCode);
 			}
 		}).done(function() {
 			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
 		});
 		return false;
 	});

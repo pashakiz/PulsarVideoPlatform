@@ -55,23 +55,23 @@
 	.bullets__item__overlay {
 		padding-top: 55px;
 	}
-	.partners > div > a {
+	.partners a {
 		display: inline-block;
 		background-repeat: no-repeat;
 		margin-left: 20px;
 		margin-right: 20px;
 		margin-bottom: 0;
 	}
-	.partners > div > a:first-child {
+	.partners a:first-child {
 		margin-left: 0;
 	}
-	.partners > div > a:last-child {
+	.partners a:last-child {
 		margin-right: 0;
 	}
-	.partners > div > a.partners__mipt {
+	.partners a.partners__mipt {
 		margin-bottom: 17px;
 	}
-	.partners > div > a.partners__skoltech {
+	.partners a.partners__skoltech {
 		margin-bottom: 2px;
 	}
 
@@ -87,7 +87,7 @@
 		top: -70px;
 		margin-bottom: -70px;
 	}
-	.partners > div > a {
+	.partners a {
 		margin-left: 44px;
 		margin-right: 44px;
 	}

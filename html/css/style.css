@@ -371,14 +371,14 @@ header .text {
 	text-align: center;
 	padding: 38px 0;
 }
-.partners > div > a {
+.partners a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	background-repeat: no-repeat;
 	margin-bottom: 30px;
 }
-.partners > div > a:last-child {
+.partners a:last-child {
 	margin-bottom: 0;
 }
 .partners__mipt {

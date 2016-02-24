@@ -87,10 +87,6 @@ header .text {
 	background-color: #2A009E;
 	border-color: #2A009E;
 }
-.btn-scroll:active {
-	background-color: transparent;
-	border-color: #2A009E;
-}
 .better {
 	background-color: #eee;
 	padding: 44px 0 40px 0;
@@ -182,10 +178,6 @@ header .text {
 }
 .bullets__item__overlay__title.lnk:hover {
 	background-color: #2A009E;
-	border-color: #2A009E;
-}
-.bullets__item__overlay__title.lnk:active {
-	background-color: transparent;
 	border-color: #2A009E;
 }
 .bullets__item__overlay__title > br {

@@ -239,7 +239,6 @@
 	#feedback {
 		margin-top: 0;
 		width: 402px; /*fix for text view*/
-		/*width: 422px;*/
 	}
 	#feedback input {
 		width: 190px;

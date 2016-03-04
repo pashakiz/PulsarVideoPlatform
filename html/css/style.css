@@ -275,12 +275,12 @@ header .text {
 	text-align: center;
 }
 .feedback_phone {
+	width: 230px;
 	display: block;
 	line-height: 1;
 	font-size: 18px;
 	font-weight: 500;
-	margin-bottom: 10px;
-	text-align: center;
+	margin: 0 auto 10px;
 }
 .feedback_phone__icon {
 	display: inline-block;
@@ -297,11 +297,12 @@ header .text {
 	margin-left: 4px;
 }
 .feedback_mailto {
+	width: 230px;
 	display: block;
 	line-height: 1;
 	font-size: 18px;
 	font-weight: 500;
-	text-align: center;
+	margin: 0 auto;
 }
 .feedback_mailto__icon {
 	display: inline-block;
@@ -317,9 +318,17 @@ header .text {
 	vertical-align: middle;
 	margin-left: 4px;
 }
+a.mailto {
+	color: inherit;
+}
+a.mailto:hover {
+	text-decoration: underline;
+}
 #feedback {
 	text-align: center;
 	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
 #feedback input {
 	display: block;
@@ -334,7 +343,6 @@ header .text {
 	font-weight: 300;
 	color: #fff;
 }
-
 #feedback button.feedback_btn-send {
 	display: inline-block;
 	margin-top: 7px;
@@ -355,9 +363,9 @@ header .text {
 	border-color: transparent;
 	background-color: #2A009E;
 }
-#feedback button.feedback_btn-send:active {
-	border: 1px solid #2A009E;
-	background-color: transparent;
+#feedback .form_success_message {
+	display: none;
+	margin-top: 20px;
 }
 .partners {
 	text-align: center;

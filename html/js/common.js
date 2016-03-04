@@ -37,14 +37,16 @@ $(document).ready(function() {
 			type: "POST",
 			url: "mail.php", // /templates/jblank/php/mail.php
 			data: $("form#feedback").serialize(),
-			success: function(data) {
-				console.log("jquery-ajax-mail-success");
+			success: function(response) {
+				$(".form_success_message").slideDown();
+				console.log("jquery-ajax-mail-success response:"+response);
 			},
-			error:  function(xhr, str){
+			error:  function(xhr, str) {
 				alert('Возникла ошибка: ' + xhr.responseCode);
 			}
 		}).done(function() {
-			alert("Спасибо за заявку!");
+			console.log("jquery-ajax-mail-done");
+			//alert("Спасибо за заявку!");
 		});
 		return false;
 	});

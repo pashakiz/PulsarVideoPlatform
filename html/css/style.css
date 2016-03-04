@@ -320,9 +320,10 @@ header .text {
 }
 a.mailto {
 	color: inherit;
+	text-decoration: underline;
 }
 a.mailto:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 #feedback {
 	text-align: center;

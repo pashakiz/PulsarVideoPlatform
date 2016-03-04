@@ -8,7 +8,7 @@ $(document).ready(function() {
 	//Документация: https://github.com/flesler/jquery.scrollTo
 	$(".btn-scroll").click(function() {
 		$.scrollTo($(".feedback"), 800, {
-			offset: -90
+			offset: 0
 		});
 	});
 
